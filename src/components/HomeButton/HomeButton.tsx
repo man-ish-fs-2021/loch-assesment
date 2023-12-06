@@ -10,7 +10,7 @@ const HomeButton = ({onClick}: HomePageProps) => {
     type="button"
     // onTouchStart={() => setOpenSidebar((prev) => !prev)}
     // onTouchStart={() => setOpenSidebar((prev) => !prev)}
-    className=" bg-black absolute right-[40px] top-[40px] lg:hidden z-50 cursor-pointer hover:cursor-pointer"
+    className=" bg-black absolute right-[40px] top-[25px] lg:hidden z-50 cursor-pointer hover:cursor-pointer"
   >
     <img src={Logo} alt="logo" />
   </button>
