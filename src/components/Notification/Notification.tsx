@@ -15,7 +15,7 @@ const Notification = ({content, icon, right ,className}: NotificationProps) => {
             {icon}
             {right}
         </div>
-        {content}
+          {content}
     </div>
   )
 }

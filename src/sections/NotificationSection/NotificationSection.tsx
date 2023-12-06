@@ -39,11 +39,11 @@ const NotificationSection = () => {
                 icon={
                   <img className="w-[28px] h-[28px]" src={Bell} alt="bell" />
                 }
-                className="bg-notification-bg"
+                className="bg-notification-bg "
                 content={
                   <div className="self-end mt-auto text-[14px] [&>*]:pt-1">
                     <div>We’ll be sending notifications to you here</div>
-                    <div>
+                    <div className="w-full">
                       <input className="h-[35px] rounded-[5.6px] border-[0.7px] border-neutral-300" />
                     </div>
                   </div>

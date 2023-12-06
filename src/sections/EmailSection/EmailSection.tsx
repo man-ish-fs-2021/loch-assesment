@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import Logo from "../../assets/icons/Logo.svg";
+import { HomeButton } from "../../components";
 
 interface EmailSectionProps {
   setOpenSidebar: (value: React.SetStateAction<boolean>) => void;
@@ -40,19 +40,7 @@ const EmailSection = ({
         openSidebar ? "block" : "hidden"
       }  lg:block lg:w-[40%]`}
     >
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          setOpenSidebar((prev) => !prev)
-        }}
-        type="button"
-        // onTouchStart={() => setOpenSidebar((prev) => !prev)}
-        // onTouchStart={() => setOpenSidebar((prev) => !prev)}
-        className=" bg-black absolute right-[40px] top-[40px] lg:hidden z-50 cursor-pointer"
-      >
-        <img src={Logo} alt="logo" />
-      </button>
+        <HomeButton onClick={() => setOpenSidebar((prev) => !prev)} />
 
       <div className="w-full h-screen bg-white shadow-side2 flex items-center justify-center p-6">
         <div className="w-[365px] flex flex-col items-start justify-center gap-6">
