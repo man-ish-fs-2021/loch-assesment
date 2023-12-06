@@ -13,8 +13,8 @@ import {
 
 const NotificationSection = () => {
   return (
-    <div className="min-h-[305px] w-full flex gap-x-10 mb-16 items-center">
-      <div className="w-[50%]">
+    <div className=" w-full flex flex-col  gap-y-10 mb-16 items-center md:min-h-[305px] md:flex-row md:gap-x-10">
+      <div className="w-full md:w-[50%]">
         <TextWithIcon
           icon={<img className="h-[32px]" src={BellDark} alt="bell-dark" />}
           mainText={
@@ -31,7 +31,7 @@ const NotificationSection = () => {
           }
         />
       </div>
-      <div className="flex w-[50%] gap-5 drop-shadow-side12 box- shadow-side">
+      <div className="flex w-full gap-5 drop-shadow-side12 box-shadow-side md:w-[50%]">
         <InfiniteLooper speed={5} direction="left">
           <div className="flex  gap-5">
             <NotificationPresenter>

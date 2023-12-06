@@ -1,15 +1,14 @@
-import React from "react";
 import Logo from "../../assets/icons/Logo.svg";
 import { Testimonial } from "../../components";
 import DragableCarousel from "./DragableCarousel/DragableCarousel";
 const TestimonialsSection = () => {
   return (
-    <div className=" w-full flex flex-col justify-center gap-4 pb-16">
-      <div className="text-white flex flex-col pr-16">
-        <div className="self-end text-[25px] font-medium py-4 ">Testimonials</div>
+    <div className="w-full flex flex-col justify-center gap-4 pb-16 py-8 md:py-0 md:pb-16">
+      <div className="text-white flex flex-col md:pr-16">
+        <div className="self-start text-[25px] font-medium py-4 md:self-end">Testimonials</div>
         <hr/>
       </div>
-      <div className="flex items-end gap-4">
+      <div className="flex gap-4 flex-col items-center md:flex-row md:items-end">
         <img src={Logo} alt="logo" />
         <DragableCarousel>
           <Testimonial
