@@ -43,7 +43,7 @@ const NotificationSection = () => {
                 content={
                   <div className="self-end mt-auto text-[14px] [&>*]:pt-1 w-full flex flex-col">
                     <div>We’ll be sending notifications to you here</div>
-                    <div className="w-full">
+                    <div>
                       <input className="h-[35px] rounded-[5.6px] border-[0.7px] border-neutral-300" />
                     </div>
                   </div>
